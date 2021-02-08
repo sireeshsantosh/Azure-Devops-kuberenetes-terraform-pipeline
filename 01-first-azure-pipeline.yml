@@ -11,14 +11,13 @@ pool:
 
 jobs:
 - job: Job1
-steps:
-- script: echo Job1 -Hello, world, changed 5 times!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-- job: Job2
-steps:
-- script: echo Job2 -Hellow, world, changed 6 times!
+  steps:
+  - script: echo Job1 -Hello, world, changed 5 times!
+    displayName: 'Run a one-line script'
+  - script: |
+      echo Add other tasks to build, test, and deploy your project.
+      echo See https://aka.ms/yaml
+    displayName: 'Run a multi-line script'
+  - job: Job2
+    steps:
+    - script: echo Job2 -Hellow, world, changed 6 times!
