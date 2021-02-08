@@ -9,11 +9,18 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+Job:
+- Job: Job1
 steps:
-- script: echo Hello, world, changed 5 times!
+- script: echo Job1 -Hello, world, changed 5 times!
   displayName: 'Run a one-line script'
+
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- Job: Job2
+Step:
+ - script: echo Job2 -Hellow, world, changed 6 times!
