@@ -21,3 +21,4 @@ jobs:
   - job: Job2
     steps:
     - script: echo Job2 -Hellow, world, changed 6 times!
+      displayName: 'Run a one-line script'
